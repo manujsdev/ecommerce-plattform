@@ -16,6 +16,8 @@ services:
     build:
       context: .
       dockerfile: apps/product-catalog/Dockerfile
+    command:
+      npm start product-catalog
       # container_name: medusa-server
     ports:
       - '4000:3000' # Expose the backend on port 4000
